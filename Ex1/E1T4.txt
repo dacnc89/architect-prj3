@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+InstanceRole - this config allow full actions to s3 buckets
+we need to change to use least-privilege access policy, only allow specific actions that user can.
+
+# Poor practice 2
+SecurityGroup - SG assign to ALB can receive all request from any IP
+We need to setup to allow specific range of IP can access.

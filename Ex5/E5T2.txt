@@ -1,0 +1,20 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- We can use Terrascan, Chef Inspect ...
+
+### Example vulnerability
+- Ingress/Egress allow traffics from all IP addresses
+
+##Scan AMI’s or containers for OS vulnerabilities
+- Ansible
+
+### Example vulnerability
+- We can use Clair to scan
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+- We can use AWS services like AWS Config, Inspector, GuardDuty
+
+### Example vulnerability
+- Server side encryption on S3 is not enabled
+- IAM roles including * in action, and resource attributes

@@ -1,0 +1,13 @@
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+- Remove SSH from Web instance
+- Update SG to specific IP address from ALB SG
+- Enable s3 encryption
+
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+- Create VPC private won't help to secure S3 bucket.
+
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+- No, only new data upload to bucket after changing to encryption will be applied.
+
+# What would happen if the original cloud formation templates are applied to this environment.
+- All change was made will lost, all states revert back like original version.
